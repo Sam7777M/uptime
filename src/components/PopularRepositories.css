@@ -1,0 +1,124 @@
+.popular-repositories {
+  background-color: #ffffff;
+  border: 1px solid #d1d9e0;
+  border-radius: 6px;
+  padding: 24px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #24292f;
+  margin: 0;
+}
+
+.customize-link {
+  font-size: 14px;
+  color: #0969da;
+  text-decoration: none;
+}
+
+.customize-link:hover {
+  text-decoration: underline;
+}
+
+.repositories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.repository-card {
+  padding: 16px;
+  border: 1px solid #d1d9e0;
+  border-radius: 6px;
+  background-color: #f6f8fa;
+  transition: border-color 0.2s;
+}
+
+.repository-card:hover {
+  border-color: #0969da;
+}
+
+.repo-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.repo-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0969da;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.repo-name:hover {
+  text-decoration: underline;
+}
+
+.repo-visibility {
+  font-size: 12px;
+  color: #656d76;
+  padding: 2px 6px;
+  border: 1px solid #d1d9e0;
+  border-radius: 12px;
+  background-color: #ffffff;
+}
+
+.repo-description {
+  font-size: 14px;
+  color: #656d76;
+  margin: 0 0 12px 0;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.repo-footer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.repo-language {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  color: #656d76;
+}
+
+.language-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .repositories-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
